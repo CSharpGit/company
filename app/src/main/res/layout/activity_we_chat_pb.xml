@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_view"
+        layout="@layout/nav_title_yewu"/>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/wxgzh_1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微信公众号"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\u3000\u3000简称公众号，曾命名为“管号平台”、“媒体平台”，微信公众号最终定位为“公众平台”,无疑让我们看到一个微信对后续更大的期望。利用公众账号平台自媒体活动，简单来说就是一对多的媒体性行为活动，如商家通过申请公众微信服务号，通过二次开发展示商家微官网、微会员、微推送、微支付、微活动、微报名等。已经形成一种主流的线上线下微信互动营销方式。"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\u3000\u3000 2018年1月5日，微信公众平台公共：规范“非固定收益类投资产品”类信息发布。即日起微信公众平台将配合微信安全中心的打击行动，针对相关诈骗、骚扰等违法违规的信息和公众号进行处理。“非固定收益类投资产品”指包括但不限于股票、期权、期货、外汇、大宗商品、电子货币等本金或收益存在不确定性的投资产品。"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/wxgzh_2"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="服务号功能"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="公众平台服务号，是公众平台的一种账号类型，旨在为用户提供服务。"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\u3000\u3000 1、1个月（自然月）内仅可以发送4条群发消息。"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\u3000\u3000 2、发给订阅用户的消息，会显示在对方的聊天列表中，相对应微信的首页。"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\u3000\u3000 3、服务号会在订阅用户的通讯录中。通讯录中有一个公众号的文件，点击可以查看所有服务号。"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\u3000\u3000 4、服务号可以申请自定义菜单"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="订阅号功能"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="公众平台订阅号，是公众平台的一种账号类型，旨在为用户提供信息。"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\u3000\u3000 1、每天（24小时）可以发送一条群发消息。"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\u3000\u3000 2、发给订阅用户的消息，将会显示在对方的“订阅号”文件夹中。点击两次才可以打开。"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\u3000\u3000 3、在订阅用户的通讯录中，订阅号将被放入订阅号文件夹中。"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

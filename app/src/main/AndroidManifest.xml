@@ -19,6 +19,7 @@
         <activity android:name=".CompanyWebDesignActivity"/>
         <activity android:name=".CompanyWeChatPubActivity"/>
         <activity android:name=".CompanyWeChatXcxActivity"/>
+        <activity android:name=".CompanyWebVisualDesignActivity"/>
     </application>
 
 </manifest>

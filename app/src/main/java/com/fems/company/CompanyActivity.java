@@ -9,6 +9,7 @@ import android.widget.LinearLayout;
 public class CompanyActivity extends AppCompatActivity {
     private LinearLayout compHome,compCase,compChat;//底部导航
     private LinearLayout toWebDesign,toWeChatPub,toWeChatXcx,toWebVisualDesign;//主营业务
+    private LinearLayout toSolutionKtv,getToSolutionJiuDian;//解决方案
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,10 +17,14 @@ public class CompanyActivity extends AppCompatActivity {
 
         compCase=findViewById(R.id.company_case);
         compChat=findViewById(R.id.company_chat);
+
         toWebDesign=findViewById(R.id.to_web_design);
         toWeChatPub=findViewById(R.id.to_we_chat_pub);
         toWeChatXcx=findViewById(R.id.to_we_chat_xcx);
         toWebVisualDesign=findViewById(R.id.to_web_visual_design);
+
+        toSolutionKtv=findViewById(R.id.to_solution_ktv);
+        getToSolutionJiuDian=findViewById(R.id.to_solution_jiudian);
         compCase.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,6 +57,20 @@ public class CompanyActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CompanyActivity.this,CompanyWebVisualDesignActivity.class);
+                CompanyActivity.this.startActivity(intent);
+            }
+        });
+        toSolutionKtv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CompanyActivity.this,CompanySolutionOfKtvActivity.class);
+                CompanyActivity.this.startActivity(intent);
+            }
+        });
+        getToSolutionJiuDian.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CompanyActivity.this,CompanySolutionOfJiuDianActivit.class);
                 CompanyActivity.this.startActivity(intent);
             }
         });

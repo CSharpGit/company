@@ -20,6 +20,8 @@
         <activity android:name=".CompanyWeChatPubActivity"/>
         <activity android:name=".CompanyWeChatXcxActivity"/>
         <activity android:name=".CompanyWebVisualDesignActivity"/>
+        <activity android:name=".CompanySolutionOfKtvActivity"/>
+        <activity android:name=".CompanySolutionOfJiuDianActivit"/>
     </application>
 
 </manifest>

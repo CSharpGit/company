@@ -230,6 +230,7 @@
                                 android:text="预约服务行业"/>
                         </LinearLayout>
                         <LinearLayout
+                            android:id="@+id/to_solution_jiudian"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"

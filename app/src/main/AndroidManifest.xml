@@ -21,7 +21,8 @@
         <activity android:name=".CompanyWeChatXcxActivity"/>
         <activity android:name=".CompanyWebVisualDesignActivity"/>
         <activity android:name=".CompanySolutionOfKtvActivity"/>
-        <activity android:name=".CompanySolutionOfJiuDianActivit"/>
+        <activity android:name=".CompanySolutionOfJiuDianActivity"/>
+        <activity android:name=".CompanySolutionOfCanYinActivity"/>
     </application>
 
 </manifest>

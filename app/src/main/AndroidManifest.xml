@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".CompanyCaseActivity"/>
+        <activity android:name=".CompanyAboutWeActivity"/>
         <activity android:name=".CompanyWebDesignActivity"/>
         <activity android:name=".CompanyWeChatPubActivity"/>
         <activity android:name=".CompanyWeChatXcxActivity"/>

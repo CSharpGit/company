@@ -20,35 +20,52 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
-                <ImageView
+                <android.support.constraint.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="240dp"
-                    android:src="@drawable/canyin_anli"
-                    android:scaleType="centerCrop"/>
-                <ImageView
+                    android:layout_height="wrap_content"
+                    android:background="#ffc100">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:src="@drawable/canyin_anli"/>
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:layout_height="250dp"
-                    android:src="@drawable/jiudian_anli"
-                    android:scaleType="centerCrop"/>
-                <ImageView
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="270dp"
+                        android:src="@drawable/jiudian_anli"/>
+                </android.support.constraint.ConstraintLayout>
+                <android.support.constraint.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:layout_height="240dp"
-                    android:src="@drawable/dianshang_anli"
-                    android:scaleType="centerCrop"/>
-                <ImageView
+                    android:layout_height="wrap_content"
+                    android:background="#33baf1">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:src="@drawable/dianshang_anli"/>
+                </android.support.constraint.ConstraintLayout>
+                <android.support.constraint.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:layout_height="240dp"
-                    android:src="@drawable/tongcheng_anli"
-                    android:scaleType="centerCrop"/>
-                <ImageView
+                    android:layout_height="wrap_content"
+                    android:background="#00af88">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:src="@drawable/tongcheng_anli"/>
+                </android.support.constraint.ConstraintLayout>
+                <android.support.constraint.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:layout_height="240dp"
-                    android:src="@drawable/jiazhuang_anli"
-                    android:scaleType="centerCrop"/>
+                    android:layout_height="wrap_content"
+                    android:background="#d8d3b6">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:src="@drawable/jiazhuang_anli"/>
+                </android.support.constraint.ConstraintLayout>
 
             </LinearLayout>
         </android.support.v4.widget.NestedScrollView>

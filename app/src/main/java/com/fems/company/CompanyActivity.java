@@ -4,16 +4,20 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class CompanyActivity extends AppCompatActivity {
+    private ImageView toAnliActivity;
     private LinearLayout compHome,compCase,compChat;//底部导航
     private LinearLayout toWebDesign,toWeChatPub,toWeChatXcx,toWebVisualDesign;//主营业务
-    private LinearLayout toSolutionKtv,ToSolutionJiuDian,ToSolutionCanYin;//解决方案
+    private LinearLayout toSolutionKtv,toSolutionJiuDian,toSolutionCanYin,toSolutionEnterprise;//解决方案
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_company);
+
+        toAnliActivity=findViewById(R.id.to_anli_activity);
 
         compCase=findViewById(R.id.company_case);
         compChat=findViewById(R.id.company_chat);
@@ -24,8 +28,17 @@ public class CompanyActivity extends AppCompatActivity {
         toWebVisualDesign=findViewById(R.id.to_web_visual_design);
 
         toSolutionKtv=findViewById(R.id.to_solution_ktv);
-        ToSolutionJiuDian=findViewById(R.id.to_solution_jiudian);
-        ToSolutionCanYin=findViewById(R.id.to_solution_canyin);
+        toSolutionJiuDian=findViewById(R.id.to_solution_jiudian);
+        toSolutionCanYin=findViewById(R.id.to_solution_canyin);
+        toSolutionEnterprise=findViewById(R.id.to_solution_enterprise);
+
+        toAnliActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CompanyActivity.this,CompanyCaseActivity.class);
+                CompanyActivity.this.startActivity(intent);
+            }
+        });
         compCase.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -68,17 +81,24 @@ public class CompanyActivity extends AppCompatActivity {
                 CompanyActivity.this.startActivity(intent);
             }
         });
-        ToSolutionJiuDian.setOnClickListener(new View.OnClickListener() {
+        toSolutionJiuDian.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CompanyActivity.this,CompanySolutionOfJiuDianActivity.class);
                 CompanyActivity.this.startActivity(intent);
             }
         });
-        ToSolutionCanYin.setOnClickListener(new View.OnClickListener() {
+       toSolutionCanYin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CompanyActivity.this,CompanySolutionOfCanYinActivity.class);
+                CompanyActivity.this.startActivity(intent);
+            }
+        });
+        toSolutionEnterprise.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CompanyActivity.this,CompanySolutionOfEnterpriseActivity.class);
                 CompanyActivity.this.startActivity(intent);
             }
         });

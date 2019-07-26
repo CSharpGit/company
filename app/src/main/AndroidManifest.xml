@@ -23,6 +23,7 @@
         <activity android:name=".CompanySolutionOfKtvActivity"/>
         <activity android:name=".CompanySolutionOfJiuDianActivity"/>
         <activity android:name=".CompanySolutionOfCanYinActivity"/>
+        <activity android:name=".CompanySolutionOfEnterpriseActivity"/>
     </application>
 
 </manifest>

@@ -3,14 +3,16 @@ package com.fems.company;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.Window;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class CompanyWebVisualDesignActivity extends AppCompatActivity {
+public class CompanyWebVisualDesignActivity extends CompanyBasicActivity {
     private ImageView backView;
     private TextView titleName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        supportRequestWindowFeature(Window.FEATURE_NO_TITLE);//去掉标题栏
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web_visual_design);
         backView=findViewById(R.id.back_view);

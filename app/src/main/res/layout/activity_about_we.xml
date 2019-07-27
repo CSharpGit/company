@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
     android:orientation="vertical">
-
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="60dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-
-            <include layout="@layout/nav_title_yewu" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -87,8 +89,9 @@
                     </LinearLayout>
                 </LinearLayout>
                 <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/company_logo"
                     android:layout_margin="10dp" />
             </LinearLayout>
             <LinearLayout
@@ -123,7 +126,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     android:layout_marginTop="15dp"
-                    android:text="\u3000\u300公司介绍第一段"
+                    android:text="\u3000\u3000公司介绍第一段"
                     android:textColor="#060606"
                     android:textSize="14sp" />
                 <TextView
@@ -132,7 +135,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     android:layout_marginTop="10dp"
-                    android:text="\u3000\u300公司介绍第二段"
+                    android:text="\u3000\u3000公司介绍第二段"
                     android:textColor="#060606"
                     android:textSize="14sp" />
                 <TextView
@@ -141,7 +144,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     android:layout_marginTop="10dp"
-                    android:text="\u3000\u300公司介绍第三段"
+                    android:text="\u3000\u3000公司介绍第三段"
                     android:textColor="#060606"
                     android:textSize="14sp" />
             </LinearLayout>
@@ -153,7 +156,9 @@
                 android:orientation="vertical">
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/company_show"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -216,4 +221,11 @@
             </LinearLayout>
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
-</LinearLayout>
+    <include
+        layout="@layout/nav_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</android.support.constraint.ConstraintLayout>

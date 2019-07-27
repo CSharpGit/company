@@ -6,7 +6,6 @@
     android:background="#ffffff"
     android:paddingBottom="20dp"
     android:orientation="vertical">
-
     <include
         android:id="@+id/include_view"
         layout="@layout/nav_title_yewu"/>

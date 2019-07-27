@@ -4,24 +4,20 @@
     android:layout_height="match_parent"
     android:background="#ef9f40"
     android:orientation="vertical">
-
+    <include
+        android:id="@+id/include_view"
+        layout="@layout/nav_title_yewu" />
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-
-            <include
-                android:id="@+id/include_view"
-                layout="@layout/nav_title_yewu" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="240dp"

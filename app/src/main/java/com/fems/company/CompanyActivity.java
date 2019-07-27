@@ -1,15 +1,19 @@
 package com.fems.company;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-public class CompanyActivity extends AppCompatActivity {
-    private ImageView toAnliActivity;
-    private LinearLayout compHome,compCase,compChat;//底部导航
+public class CompanyActivity extends CompanyBasicActivity {
+    private ImageView toAnliActivity,companyHomeIcon,companyAnliIcon,companyAboutWeIcon;
+    private LinearLayout compCase,compAboutWe;//底部导航
     private LinearLayout toWebDesign,toWeChatPub,toWeChatXcx,toWebVisualDesign;//主营业务
     private LinearLayout toSolutionKtv,toSolutionJiuDian,toSolutionCanYin,toSolutionEnterprise;//解决方案
     @Override
@@ -20,7 +24,11 @@ public class CompanyActivity extends AppCompatActivity {
         toAnliActivity=findViewById(R.id.to_anli_activity);
 
         compCase=findViewById(R.id.company_case);
-        compChat=findViewById(R.id.company_chat);
+        compAboutWe=findViewById(R.id.company_about_we);
+
+        companyHomeIcon=findViewById(R.id.company_home_icon);
+        companyAnliIcon=findViewById(R.id.company_anli_icon);
+        companyAboutWeIcon=findViewById(R.id.about_us_icon);
 
         toWebDesign=findViewById(R.id.to_web_design);
         toWeChatPub=findViewById(R.id.to_we_chat_pub);
@@ -32,14 +40,25 @@ public class CompanyActivity extends AppCompatActivity {
         toSolutionCanYin=findViewById(R.id.to_solution_canyin);
         toSolutionEnterprise=findViewById(R.id.to_solution_enterprise);
 
-        toAnliActivity.setOnClickListener(new View.OnClickListener() {
+        companyHomeIcon.setImageResource(R.drawable.company_icon_1);
+        companyAnliIcon.setImageResource(R.drawable.anli_icon_2);
+        companyAboutWeIcon.setImageResource(R.drawable.about_us_2);
+
+        compCase.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CompanyActivity.this,CompanyCaseActivity.class);
                 CompanyActivity.this.startActivity(intent);
             }
         });
-        compCase.setOnClickListener(new View.OnClickListener() {
+        compAboutWe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CompanyActivity.this,CompanyAboutWeActivity.class);
+                CompanyActivity.this.startActivity(intent);
+            }
+        });
+        toAnliActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CompanyActivity.this,CompanyCaseActivity.class);

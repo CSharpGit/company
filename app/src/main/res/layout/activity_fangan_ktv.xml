@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
+    <include
+        android:id="@+id/include_view"
+        layout="@layout/nav_title_yewu"/>
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -14,9 +16,6 @@
             android:layout_height="wrap_content"
             android:background="#ffffff"
             android:orientation="vertical">
-            <include
-                android:id="@+id/include_view"
-                layout="@layout/nav_title_yewu"/>
             <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="240dp">

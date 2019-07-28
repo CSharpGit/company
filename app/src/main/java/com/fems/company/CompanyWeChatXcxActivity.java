@@ -3,14 +3,16 @@ package com.fems.company;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.Window;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class CompanyWeChatXcxActivity extends AppCompatActivity {
+public class CompanyWeChatXcxActivity extends CompanyBasicActivity {
     private ImageView backView;
     private TextView titleName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        supportRequestWindowFeature(Window.FEATURE_NO_TITLE);//去掉标题栏
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wechat_xcx);
         backView=findViewById(R.id.back_view);

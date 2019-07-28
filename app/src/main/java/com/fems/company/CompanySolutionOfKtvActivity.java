@@ -12,7 +12,6 @@ public class CompanySolutionOfKtvActivity extends CompanyBasicActivity {
     private TextView titleName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        supportRequestWindowFeature(Window.FEATURE_NO_TITLE);//去掉标题栏
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fangan_ktv);
         backView=findViewById(R.id.back_view);

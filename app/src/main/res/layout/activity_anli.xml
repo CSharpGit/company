@@ -21,6 +21,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
                 <android.support.constraint.ConstraintLayout
+                    android:id="@+id/industry_canyin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#ffc100">
@@ -31,6 +32,7 @@
                 </android.support.constraint.ConstraintLayout>
 
                 <android.support.constraint.ConstraintLayout
+                    android:id="@+id/industry_jiudian"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#ffffff">
@@ -40,6 +42,7 @@
                         android:src="@drawable/jiudian_anli"/>
                 </android.support.constraint.ConstraintLayout>
                 <android.support.constraint.ConstraintLayout
+                    android:id="@+id/industry_dianshang"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#33baf1">
@@ -49,6 +52,7 @@
                         android:src="@drawable/dianshang_anli"/>
                 </android.support.constraint.ConstraintLayout>
                 <android.support.constraint.ConstraintLayout
+                    android:id="@+id/industry_tongcheng"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#00af88">
@@ -58,6 +62,7 @@
                         android:src="@drawable/tongcheng_anli"/>
                 </android.support.constraint.ConstraintLayout>
                 <android.support.constraint.ConstraintLayout
+                    android:id="@+id/industry_trim"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#d8d3b6">
@@ -66,7 +71,6 @@
                         android:layout_height="250dp"
                         android:src="@drawable/jiazhuang_anli"/>
                 </android.support.constraint.ConstraintLayout>
-
             </LinearLayout>
         </android.support.v4.widget.NestedScrollView>
     </LinearLayout>

@@ -49,21 +49,23 @@
                     android:layout_height="wrap_content"
                     android:textColor="#222222"
                     android:textSize="14sp"
-                    android:text="\u3000\u3000第一段"/>
+                    android:text="\u3000\u3000视觉设计是针对眼睛功能的主观形式的表现手段和结果。与视觉传达设计的异同，视觉传达设计属于视觉设计的一部分，主要针对被传达对象即观众而有所表现，缺少对设计者自身视觉需求因素的诉求。视觉传达既传达给视觉观众也传达给设计者本人，因此深入的视觉传达研究已经关注到视觉的方方面面感受，称其为视觉设计更加贴切。"/>
                 <TextView
                     android:id="@+id/par_2"
+                    android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="#222222"
                     android:textSize="14sp"
-                    android:text="\u3000\u3000第二段"/>
+                    android:text="\u3000\u3000到底什么是视觉设计，就由涉及计算机专业考证的NIEH来为大家解答疑惑视觉设计是针对眼睛官能的主观形式的表现手段和结果。与视觉传达设计的异同：视觉传达设计属于视觉设计的一部分，主要针对被传达对象即观众而有所表现，缺少对设计者自身视觉需求因素的诉求。视觉传达既传达给视觉观众也传达给设计者本人，因此深入的视觉传达研究已经关注到视觉的方方面面感受，称其为视觉设计更加贴切。"/>
                 <TextView
                     android:id="@+id/par_3"
+                    android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="#222222"
                     android:textSize="14sp"
-                    android:text="\u3000\u3000第三段"/>
+                    android:text="\u3000\u3000就At the present stage的设计状况分析，其视觉传达设计的主要内容依然是Graphic Design一般专业人士习惯称之为“平面设计”。“视觉传达设计”、“平面设计”两者所包含的设计范畴在现阶段并无大的差异，“视觉传达设计”、“平面设计”在概念范畴上的区分与统一，并不存在着矛盾与对立。"/>
             </LinearLayout>
             <ImageView
                 android:layout_width="match_parent"
@@ -76,13 +78,6 @@
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:orientation="vertical">
-                <TextView
-                    android:id="@+id/par_4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="#222222"
-                    android:textSize="14sp"
-                    android:text="\u3000\u3000第四段"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -116,14 +111,15 @@
                 android:layout_height="wrap_content"
                 android:textColor="#222222"
                 android:textSize="14sp"
-                android:text="\u3000\u3000第五段"/>
+                android:text="\u3000\u3000VI即（Visual Identity），通译为视觉识别，是CIS系统中最具传播力和感染力的层面。人们所感知的外部信息，有83%是通过视觉通道到达人们心智的。"/>
                 <TextView
                     android:id="@+id/par_6"
+                    android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="#222222"
                     android:textSize="14sp"
-                    android:text="\u3000\u3000第六段"/>
+                    android:text="\u3000\u3000也就是说，视觉是人们接受外部信息的最重要和最主要的通道。企业形象的视觉识别，即是将CI的非可视内容转化为静态的视觉识别符号，以无比丰富的多样的应用形式，在最为广泛的层面上，进行最直接的传播。设计科学、实施有利的视觉识别，是传播企业经营理念、建立企业知名度、塑造企业形象的快速便捷之途。"/>
             </LinearLayout>
             <ImageView
                 android:layout_width="match_parent"
@@ -142,14 +138,15 @@
                     android:layout_height="wrap_content"
                     android:textColor="#222222"
                     android:textSize="14sp"
-                    android:text="\u3000\u3000第七段"/>
+                    android:text="\u3000\u3000VI的设计不是机械的符号操作，而是以MI为内涵的生动表述。所以，VI设计应多角度、全方位地反映企业的经营理念。"/>
                 <TextView
                     android:id="@+id/par_8"
+                    android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="#222222"
                     android:textSize="14sp"
-                    android:text="\u3000\u3000第八段"/>
+                    android:text="\u3000\u3000VI设计不是设计人员的异想天开而是要求具有较强的可实施性。如果在实施性上过于麻烦，或因成本昂贵而影响实施，再优秀的VI也会由于难以落实而成为空中楼阁、纸上谈兵。"/>
             </LinearLayout>
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>

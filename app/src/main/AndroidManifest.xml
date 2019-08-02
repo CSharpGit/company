@@ -25,6 +25,7 @@
         <activity android:name=".CompanySolutionOfJiuDianActivity"/>
         <activity android:name=".CompanySolutionOfCanYinActivity"/>
         <activity android:name=".CompanySolutionOfEnterpriseActivity"/>
+        <activity android:name=".CompanyIndustryCaseActivity"/>
     </application>
 
 </manifest>

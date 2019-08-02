@@ -121,6 +121,7 @@
                     android:textColor="#a2a2a2"
                     android:textSize="10sp" />
                 <TextView
+                    android:id="@+id/graph_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
@@ -130,6 +131,7 @@
                     android:textColor="#060606"
                     android:textSize="14sp" />
                 <TextView
+                    android:id="@+id/graph_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
@@ -139,6 +141,7 @@
                     android:textColor="#060606"
                     android:textSize="14sp" />
                 <TextView
+                    android:id="@+id/graph_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"

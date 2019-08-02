@@ -3,6 +3,7 @@ package com.fems.company.server;
 public class Commons {
     //地址
     public static final String WEB_URL ="http://www.changxingduocai.com/";
+
     //assets
     public static final String ASSETS = "assets://images/";
     //首页轮播图

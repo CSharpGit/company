@@ -6,13 +6,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.fems.company.bean.IndustryCaseItemBean;
+
 import java.util.List;
 
 public class CompanyIndustryCaseAdapter extends  RecyclerView.Adapter<CompanyIndustryCaseAdapter.MyViewHolder> {
-    private List<String> listData;
+    private List<IndustryCaseItemBean> listData;
     private Context mContext;
     private LayoutInflater inflater;
-    public CompanyIndustryCaseAdapter(Context context, List<String> data){
+    public CompanyIndustryCaseAdapter(Context context, List<IndustryCaseItemBean> data){
         this. mContext=context;
         this.listData=data;
         inflater=LayoutInflater. from(mContext);
@@ -26,7 +29,7 @@ public class CompanyIndustryCaseAdapter extends  RecyclerView.Adapter<CompanyInd
     //填充onCreateViewHolder方法返回的holder中的控件
     @Override
     public void onBindViewHolder(MyViewHolder holder, final int position) {
-        holder.nameView.setText( listData.get(position));
+        holder.nameView.setText( listData.get(position).industryName);
     }
 
     //重写onCreateViewHolder方法，返回一个自定义的ViewHolder
